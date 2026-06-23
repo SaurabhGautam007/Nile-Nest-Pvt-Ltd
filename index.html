@@ -4,6 +4,7 @@
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
 <title>NileNest Pvt. Ltd. — Natural Wellness</title>
+<link rel="icon" type="image/jpeg" href="download.jpeg"/>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400;1,600&family=Jost:wght@200;300;400;500;600&display=swap" rel="stylesheet"/>
 <style>
 :root{
@@ -66,18 +67,18 @@ nav.scrolled .logo-text-sub{fill:#333333}
 
 /* HERO */
 .hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;max-width:100vw}
-.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&q=85');background-size:cover;background-position:center 30%;animation:zoomHero 14s ease-out forwards}
+.hero-bg{position:absolute;inset:0;background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=1800&q=85');background-size:cover;background-position:center 30%;animation:zoomHero 1s ease forwards}
 @keyframes zoomHero{from{transform:scale(1.08)}to{transform:scale(1.0)}}
 .hero-overlay{position:absolute;inset:0;background:linear-gradient(120deg,rgba(20,50,30,0.88) 0%,rgba(20,50,30,0.55) 55%,rgba(0,0,0,0.2) 100%)}
 .hero-content{position:relative;z-index:2;padding:0 64px;max-width:760px}
-.hero-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.25);border-radius:40px;padding:8px 20px;margin-bottom:30px;opacity:0;animation:slideUp 0.7s ease 1.8s forwards}
+.hero-pill{display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.1);border:1px solid rgba(255,255,255,0.25);border-radius:40px;padding:8px 20px;margin-bottom:30px;opacity:0;animation:slideUp 0.8s ease 1.8s forwards}
 .hero-pill-dot{width:7px;height:7px;border-radius:50%;background:var(--green3)}
 .hero-pill span{font-size:11px;letter-spacing:0.22em;text-transform:uppercase;color:rgba(255,255,255,0.9);font-weight:300}
 .hero h1{font-family:'Playfair Display',serif;font-size:clamp(48px,6vw,82px);font-weight:400;color:white;line-height:1.08;margin-bottom:26px;opacity:0;animation:slideUp 0.8s ease 2s forwards}
 .hero h1 em{font-style:italic;color:var(--green3)}
 .hero-desc{font-size:17px;font-weight:300;color:rgba(255,255,255,0.72);line-height:1.9;max-width:500px;margin-bottom:46px;opacity:0;animation:slideUp 0.8s ease 2.2s forwards}
 .hero-btns{display:flex;gap:18px;opacity:0;animation:slideUp 0.7s ease 2.4s forwards}
-.btn-green{background:var(--green2);color:white;padding:17px 42px;border-radius:40px;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.3s;border:none;cursor:pointer}
+.btn-green{background:var(--green2);color:white;padding:17px 42px;border-radius:40px;font-size:12px;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.3s}
 .btn-green:hover{background:var(--green3);color:var(--green);transform:translateY(-2px)}
 .btn-outline-w{border:1px solid rgba(255,255,255,0.45);color:white;padding:17px 42px;border-radius:40px;font-size:12px;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;text-decoration:none;transition:all 0.3s}
 .btn-outline-w:hover{background:rgba(255,255,255,0.1);border-color:white}
@@ -180,7 +181,7 @@ nav.scrolled .logo-text-sub{fill:#333333}
 /* TESTIMONIAL */
 .testimony{background:var(--green);padding:100px 64px;text-align:center;position:relative;overflow:hidden}
 .testimony::before{content:'';position:absolute;top:-80px;left:50%;transform:translateX(-50%);width:500px;height:500px;border-radius:50%;background:rgba(255,255,255,0.04)}
-.testimony blockquote{font-family:'Playfair Display',serif;font-size:clamp(20px,2.5vw,32px);font-weight:400;font-style:italic;color:white;max-width:760px;margin:0 auto;line-height:1.65;position:relative;z-index:1}
+.testimony blockquote{font-family:'Playfair Display',serif;font-size:clamp(20px,2.5vw,32px);font-weight:400;font-style:italic;color:white;max-width:760px;margin:0 auto;line-height:1.65;position:relative}
 .testimony blockquote::before{content:'\201C';font-size:120px;color:rgba(255,255,255,0.12);position:absolute;top:-40px;left:-20px;line-height:1;font-style:normal}
 .testimony cite{display:block;font-family:'Jost',sans-serif;font-size:11px;font-weight:400;letter-spacing:0.24em;text-transform:uppercase;color:rgba(255,255,255,0.55);margin-top:36px;font-style:normal}
 
@@ -197,7 +198,7 @@ nav.scrolled .logo-text-sub{fill:#333333}
 .cf-row{display:grid;grid-template-columns:1fr 1fr;gap:18px}
 .fg{margin-bottom:22px}
 .fg label{display:block;font-size:10px;font-weight:500;letter-spacing:0.22em;text-transform:uppercase;color:var(--sage);margin-bottom:8px}
-.fg input,.fg select,.fg textarea{width:100%;background:var(--cream);border:1.5px solid var(--cream3);border-radius:10px;padding:13px 16px;font-family:'Jost',sans-serif;font-size:14px;font-weight:300;color:var(--text);outline:none;transition:border-color 0.3s}
+.fg input,.fg select,.fg textarea{width:100%;background:var(--cream);border:1.5px solid var(--cream3);border-radius:10px;padding:13px 16px;font-family:'Jost',sans-serif;font-size:14px;font-weight:300;color:var(--text2)}
 .fg input:focus,.fg select:focus,.fg textarea:focus{border-color:var(--green2);background:white}
 .fg select option{background:white}
 .fg textarea{resize:vertical;min-height:110px}
@@ -263,7 +264,7 @@ footer{background:#111111;padding:80px 64px 36px}
       <rect class="bar4" x="48" y="0" width="16" height="54" rx="2" fill="rgba(255,255,255,0.85)"/>
     </svg>
   </div>
-  <p class="ld-title">Nile Nest</p>
+  <p class="ld-title">NileNest</p>
   <span class="ld-sub">Natural Wellness</span>
   <div class="ld-bar"><div class="ld-bar-fill"></div></div>
 </div>
@@ -277,7 +278,7 @@ footer{background:#111111;padding:80px 64px 36px}
     <rect x="50" y="30" width="28" height="42" rx="3" class="logo-bar"/>
     <rect x="90" y="8" width="28" height="64" rx="3" class="logo-bar"/>
     <rect x="10" y="73" width="108" height="3" rx="1.5" class="logo-bar" opacity="0.5"/>
-    <text x="140" y="40" font-family="Playfair Display, serif" font-size="42" font-weight="700" letter-spacing="2" class="logo-text-main">NILE NEST</text>
+    <text x="140" y="40" font-family="Playfair Display, serif" font-size="42" font-weight="700" letter-spacing="2" class="logo-text-main">NILENEST</text>
     <text x="140" y="75" font-family="Playfair Display, serif" font-size="24" font-weight="400" letter-spacing="4" class="logo-text-sub">PVT. LTD.</text>
   </svg>
 </a>
@@ -366,7 +367,7 @@ footer{background:#111111;padding:80px 64px 36px}
     <div>
       <div class="s-tag reveal"><div class="s-tag-line"></div><span>Who We Are</span></div>
       <h2 class="s-title reveal reveal-d1">Rooted in Nature,<br><em>Driven by Wellness</em></h2>
-      <p class="s-body reveal reveal-d2">Like the great FMCG companies that shape everyday lives, Nile Nest Pvt. Ltd. builds products that millions trust daily — from farm-fresh foods to herbal supplements and natural personal care, all made with integrity.</p>
+      <p class="s-body reveal reveal-d2">Like the great FMCG companies that shape everyday lives, NileNest Pvt. Ltd. builds products that millions trust daily — from farm-fresh foods to herbal supplements and organic beauty essentials. We're committed to making natural wellness accessible to everyone, every single day.</p>
       <div class="about-pillars reveal reveal-d3">
         <div class="pillar">
           <div class="pillar-icon"><svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10c0 5.52-4.48 10-10 10S2 17.52 2 12c0-2.76 1.12-5.26 2.93-7.07"/><path d="M12 6v6l4 2"/></svg></div>
@@ -482,7 +483,7 @@ footer{background:#111111;padding:80px 64px 36px}
   <div class="wellness-content">
     <div class="s-tag reveal"><div class="s-tag-line"></div><span>Our Philosophy</span></div>
     <h2 class="s-title reveal reveal-d1">Wellness Is a<br><em>Way of Life</em></h2>
-    <p class="s-body reveal reveal-d2">We believe true wellness comes from living in harmony with nature. Every Nile Nest product is designed to nourish your body, calm your mind, and elevate your everyday.</p>
+    <p class="s-body reveal reveal-d2">We believe true wellness comes from living in harmony with nature. Every NileNest product is designed to nourish your body, calm your mind, and elevate your everyday experience.</p>
     <div class="wellness-points">
       <div class="wp reveal reveal-d1">
         <div class="wp-num">01</div>
@@ -532,7 +533,7 @@ footer{background:#111111;padding:80px 64px 36px}
 
 <!-- TESTIMONIAL -->
 <div class="testimony">
-  <blockquote class="reveal">"Nile Nest changed how our family eats. The quality of their organic products is unmatched — you can literally taste the difference that natural, honest ingredients make."</blockquote>
+  <blockquote class="reveal">"NileNest changed how our family eats. The quality of their organic products is unmatched — you can literally taste the difference that natural, honest ingredients make. Highly recommend!"</blockquote>
   <cite class="reveal reveal-d1">— Priya Desai, Loyal Customer · Pune, Maharashtra</cite>
 </div>
 
@@ -549,7 +550,7 @@ footer{background:#111111;padding:80px 64px 36px}
           <div><div class="cd-label">Head Office</div><div class="cd-val">Symphony IT Park Hinjewadi, Pune<br>Maharashtra — 411018</div></div>
         </div>
         <div class="cd reveal reveal-d1">
-          <div class="cd-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4A2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.9a16 16 0 0 0 6 6l.94-.94a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 21.73 16.92z"/></svg></div>
+          <div class="cd-icon"><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.4A2 2 0 0 1 3.6 1.22h3a2 2 0 0 1 2 1.36 12.04 12.04 0 0 0 .33 1m8.56 8.32a2 2 0 0 1-.34 2 12.06 12.06 0 0 1-5.1 3.53 2 2 0 0 1-2.25-.45l-1.32-1.32a2 2 0 0 0-2.83 0l-.5.5a2 2 0 0 0 0 2.83l1.32 1.32a2 2 0 0 0 2.83 0l.5-.5a12.04 12.04 0 0 0 3.53-5.1 2 2 0 0 1 2-1.34h1.25a2 2 0 0 1 2 2z"/></svg></div>
           <div><div class="cd-label">Phone</div><div class="cd-val">+91 20 0000 0000</div></div>
         </div>
         <div class="cd reveal reveal-d2">
@@ -589,7 +590,7 @@ footer{background:#111111;padding:80px 64px 36px}
         <rect x="50" y="30" width="28" height="42" rx="3" fill="white"/>
         <rect x="90" y="8" width="28" height="64" rx="3" fill="white"/>
         <rect x="10" y="73" width="108" height="3" rx="1.5" fill="white" opacity="0.4"/>
-        <text x="128" y="38" font-family="Arial" font-size="18" font-weight="700" letter-spacing="2" fill="white">NILE NEST</text>
+        <text x="128" y="38" font-family="Arial" font-size="18" font-weight="700" letter-spacing="2" fill="white">NILENEST</text>
         <text x="128" y="58" font-family="Arial" font-size="11" font-weight="400" letter-spacing="4" fill="rgba(255,255,255,0.6)">PVT. LTD.</text>
       </svg>
       <p>Nourishing lives with nature's finest — from farm to family, with love and integrity.</p>
