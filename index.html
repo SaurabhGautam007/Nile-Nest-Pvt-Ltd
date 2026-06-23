@@ -49,7 +49,8 @@ body{font-family:'Jost',sans-serif;background:var(--cream);color:var(--text);ove
 /* NAV */
 nav{position:fixed;top:0;width:100%;max-width:100vw;z-index:1000;padding:0 64px;height:78px;display:flex;align-items:center;justify-content:space-between;transition:all 0.4s;overflow:hidden}
 nav.scrolled{background:rgba(250,246,239,0.97);backdrop-filter:blur(16px);box-shadow:0 1px 0 rgba(92,61,46,0.12)}
-.nav-logo{display:flex;align-items:center;gap:0;text-decoration:none}
+.nav-logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.nav-logo img{height:50px;width:auto;object-fit:contain}
 .nav-links{display:flex;gap:38px;list-style:none}
 .nav-links a{font-size:12px;font-weight:400;letter-spacing:0.14em;text-transform:uppercase;color:var(--white);text-decoration:none;transition:color 0.3s;opacity:0.85}
 nav.scrolled .nav-links a{color:var(--text2)}
@@ -59,13 +60,9 @@ nav.scrolled .nav-links a:hover{color:var(--green)}
 nav.scrolled .nav-btn{background:var(--green);color:white}
 .nav-btn:hover{transform:translateY(-2px);box-shadow:0 8px 24px rgba(45,106,79,0.3)}
 
-/* LOGO COLOR TRANSITION */
-.logo-bar{fill:white;transition:fill 0.4s}
-.logo-text-main{fill:white;transition:fill 0.4s}
-.logo-text-sub{fill:rgba(255,255,255,0.8);transition:fill 0.4s}
-nav.scrolled .logo-bar{fill:#111111}
-nav.scrolled .logo-text-main{fill:#111111}
-nav.scrolled .logo-text-sub{fill:#333333}
+/* LOGO TEXT */
+.logo-text{font-family:'Playfair Display',serif;font-size:18px;font-weight:700;letter-spacing:1px;color:white;transition:color 0.4s}
+nav.scrolled .logo-text{color:#111111}
 
 /* HERO */
 .hero{min-height:100vh;position:relative;display:flex;align-items:center;overflow:hidden;max-width:100vw}
@@ -210,6 +207,7 @@ nav.scrolled .logo-text-sub{fill:#333333}
 /* FOOTER */
 footer{background:#111111;padding:80px 64px 36px}
 .footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:56px;margin-bottom:56px}
+.fb-brand img{height:40px;width:auto;margin-bottom:15px}
 .fb-brand p{font-size:13px;font-weight:300;color:rgba(255,255,255,0.55);line-height:1.9;margin-top:18px;max-width:260px}
 .fc h4{font-size:11px;font-weight:600;letter-spacing:0.26em;text-transform:uppercase;color:var(--green3);margin-bottom:22px}
 .fc ul{list-style:none;display:flex;flex-direction:column;gap:14px}
@@ -273,17 +271,10 @@ footer{background:#111111;padding:80px 64px 36px}
 
 <!-- NAV -->
 <nav id="navbar">
-<a href="#home" class="nav-logo">
-  <svg width="240" height="80" viewBox="0 0 420 120" fill="none" xmlns="http://www.w3.org/2000/svg">
-    <rect x="10" y="20" width="28" height="52" rx="3" class="logo-bar"/>
-    <rect x="10" y="8" width="28" height="10" rx="2" class="logo-bar" opacity="0.6"/>
-    <rect x="50" y="30" width="28" height="42" rx="3" class="logo-bar"/>
-    <rect x="90" y="8" width="28" height="64" rx="3" class="logo-bar"/>
-    <rect x="10" y="73" width="108" height="3" rx="1.5" class="logo-bar" opacity="0.5"/>
-    <text x="140" y="40" font-family="Playfair Display, serif" font-size="42" font-weight="700" letter-spacing="2" class="logo-text-main">NILENEST</text>
-    <text x="140" y="75" font-family="Playfair Display, serif" font-size="24" font-weight="400" letter-spacing="4" class="logo-text-sub">PVT. LTD.</text>
-  </svg>
-</a>
+  <a href="#home" class="nav-logo">
+    <img src="download.jpeg" alt="NileNest Logo"/>
+    <span class="logo-text">NileNest</span>
+  </a>
   <ul class="nav-links">
     <li><a href="#home">Home</a></li>
     <li><a href="#about">About</a></li>
@@ -586,15 +577,7 @@ footer{background:#111111;padding:80px 64px 36px}
 <footer>
   <div class="footer-grid">
     <div class="fb-brand">
-      <svg width="100" height="46" viewBox="0 0 220 80" fill="none">
-        <rect x="10" y="20" width="28" height="52" rx="3" fill="white"/>
-        <rect x="10" y="8" width="28" height="10" rx="2" fill="white" opacity="0.5"/>
-        <rect x="50" y="30" width="28" height="42" rx="3" fill="white"/>
-        <rect x="90" y="8" width="28" height="64" rx="3" fill="white"/>
-        <rect x="10" y="73" width="108" height="3" rx="1.5" fill="white" opacity="0.4"/>
-        <text x="128" y="38" font-family="Arial" font-size="18" font-weight="700" letter-spacing="2" fill="white">NILENEST</text>
-        <text x="128" y="58" font-family="Arial" font-size="11" font-weight="400" letter-spacing="4" fill="rgba(255,255,255,0.6)">PVT. LTD.</text>
-      </svg>
+      <img src="download.jpeg" alt="NileNest Logo"/>
       <p>Nourishing lives with nature's finest — from farm to family, with love and integrity.</p>
     </div>
     <div class="fc">
